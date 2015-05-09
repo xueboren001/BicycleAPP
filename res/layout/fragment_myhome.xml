@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F0F0" 
+    xmlns:app="http://schemas.android.com/apk/res/com.boren.bicycle">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"/>
+	
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent">
+            
+            <com.boren.bicycle.wegdit.LineSetting
+                android:id="@+id/boren_myhome_collect"
+	            android:layout_width="match_parent"
+	            android:layout_height="60dp"
+	            android:layout_marginTop="25dp"
+	            app:br_line_text="我 的 收 藏"
+	            app:br_line_left_iv_background="@drawable/ic_launcher"
+	            app:br_line_right_iv_background="@drawable/ic_launcher"
+	            app:br_line_text_number="10">
+	        </com.boren.bicycle.wegdit.LineSetting>
+		    
+	        <com.boren.bicycle.wegdit.LineSetting
+	            android:id="@+id/boren_myhome_address"
+	            android:layout_width="match_parent"
+	            android:layout_height="60dp"
+	            android:layout_marginTop="15dp"
+	            app:br_line_text="我 的 地 址"
+	            app:br_line_left_iv_background="@drawable/ic_launcher"
+	            app:br_line_right_iv_background="@drawable/ic_launcher"
+	            app:br_line_text_number="10">
+	        </com.boren.bicycle.wegdit.LineSetting>
+	        
+	        <com.boren.bicycle.wegdit.LineSetting
+	            android:id="@+id/boren_myhome_change_password"
+	            android:layout_width="match_parent"
+	            android:layout_height="60dp"
+	            android:layout_marginTop="15dp"
+	            app:br_line_text="修 改 密 码"
+	            app:br_line_left_iv_background="@drawable/ic_launcher"
+	            app:br_line_right_iv_background="@drawable/ic_launcher"
+	            app:br_line_text_number="10">
+	        </com.boren.bicycle.wegdit.LineSetting>
+            
+        </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>

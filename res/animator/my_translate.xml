@@ -1,0 +1,15 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:ordering="sequentially">
+    
+    <objectAnimator 
+        android:propertyName="y"
+        android:interpolator="@android:anim/bounce_interpolator"
+        android:valueFrom="-100"
+        android:valueTo="0"
+        android:valueType="floatType"/>
+    
+    
+    
+    
+    
+</set>

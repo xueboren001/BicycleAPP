@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8f0f0"
+    android:orientation="vertical" >
+	
+    <include layout="@layout/bicycle_register_activity_title_bar" />
+    
+    <LinearLayout
+            android:id="@+id/linearLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" 
+            android:orientation="vertical">
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+                    <TextView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机验证" android:textSize="15sp" android:alpha="0.3" android:textColor="#000000"/>
+                    <ImageView android:layout_gravity="center" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.3" android:src="@drawable/group_fold_arrow"/>
+                </LinearLayout>
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="密码设置" android:textSize="15sp"  android:textColor="#000000"/>
+                    <ImageView android:layout_gravity="center" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/group_fold_arrow"/>
+                </LinearLayout>
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="注册完成" android:textSize="15sp" android:alpha="0.3" android:textColor="#000000"/>
+                    <ImageView android:layout_gravity="center" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.3" android:src="@drawable/group_fold_arrow"/>
+                </LinearLayout>
+            </LinearLayout>
+            
+                
+                
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp" 
+                android:background="@drawable/prefresh_list_cutline"/>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:orientation="vertical"
+                android:background="@drawable/input"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="密码" android:layout_marginLeft="16dp" android:textColor="#000000" android:textSize="19sp"/>
+                    <EditText android:id="@+id/et_password" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="textPassword" android:maxLength="20" android:layout_marginLeft="5dp" android:hint="请输入密码" android:background="@null" android:textSize="17sp"/>
+                </LinearLayout>
+                <View android:layout_height="1dp" android:layout_width="fill_parent" android:background="@drawable/prefresh_list_cutline"/>
+                <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="确认" android:layout_marginLeft="16dp" android:textSize="19sp" android:textColor="#000000"/>
+                    <EditText android:id="@+id/et_password_confirm" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="textPassword" android:maxLength="20" android:layout_marginLeft="5dp" android:hint="再次输入密码" android:background="@null" android:textSize="17sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            
+            <Button 
+                android:id="@+id/btn_set_password"
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:text="确认密码" 
+                android:background="@drawable/qqdemo_register_button_select" 
+                android:layout_marginTop="22dp" 
+                android:layout_marginLeft="22dp" 
+                android:layout_marginRight="22dp"/>
+            
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp" 
+                android:alpha="0.3" 
+                android:textColor="#000000"
+                android:text="密码只可包含以下字符：\na-z、A-Z、0-9、@,#,$,%,&amp;"/>
+            
+     </LinearLayout>
+
+</LinearLayout>

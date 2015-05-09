@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#2b2b2b">
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+   		android:layout_height="45dp"
+   		android:background="@drawable/left_nav_title_bg">
+        	<TextView
+        	android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginLeft="10dp"
+    		android:text="单车游"
+    		android:layout_centerVertical="true"
+    		style="@style/NavigationTextStyle"/>       	    
+    </RelativeLayout>
+    
+                
+    <LinearLayout 
+         android:orientation="vertical" 
+         android:layout_width="fill_parent" 
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp">
+         <RadioGroup 
+			android:id="@+id/nav_radiogroup"
+			android:gravity="center_vertical"
+			android:orientation="vertical"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content">
+			
+             <RadioButton 
+			    android:id="@+id/boren_rb_app_home" 
+			    android:checked="true" 
+			    android:text="首页" 
+			    android:drawableLeft="@drawable/icon_toutiao"
+			    android:layout_marginTop="10dp"
+			    android:textColor="@color/gainsboro"
+			    style="@style/NavRadioStyle"/>
+			<RadioButton 
+			    android:id="@+id/boren_rb_my_home" 
+			    android:checked="true" 
+			    android:text="个人中心" 
+			    android:drawableLeft="@drawable/icon_toutiao"
+			    android:layout_marginTop="10dp"
+			    android:textColor="@color/gainsboro"
+			    style="@style/NavRadioStyle"/>
+		 	<RadioButton 
+			    android:id="@+id/boren_rb_around" 
+			    android:text="周        边" 
+			    android:drawableLeft="@drawable/icon_yule"
+			    android:layout_marginTop="10dp"
+			    android:textColor="@color/gainsboro"
+			  	style="@style/NavRadioStyle"/>
+		 	<RadioButton 
+			    android:id="@+id/boren_rb_search" 
+			    android:text="搜        索"
+			    android:drawableLeft="@drawable/icon_tech"
+			    android:layout_marginTop="10dp"
+			    android:textColor="@color/gainsboro"
+			  	style="@style/NavRadioStyle"/>
+			</RadioGroup>	
+      </LinearLayout>    
+</LinearLayout>

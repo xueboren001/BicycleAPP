@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    
+    <declare-styleable name="SwitchCountDownTimerTvBtn">
+        <attr name="br_stb_btn_text" format="string"/>
+        <attr name="br_stb_tv_text" format="string"/>
+        <attr name="br_stb_count_millisInFuture" format="integer"/>
+        <attr name="br_stb_count_countDownInterval" format="integer"/>
+    </declare-styleable>
+    
+    <declare-styleable name="LineSetting">
+        <attr name="br_line_left_iv_background" format="reference"/>
+        <attr name="br_line_text" format="string" />
+        <attr name="br_line_text_number" format="string" />
+        <attr name="br_line_right_iv_background" format="reference" />
+    </declare-styleable>
+    
+    
+</resources>
