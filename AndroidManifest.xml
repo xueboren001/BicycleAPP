@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.boren.bicycle"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="15" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.boren.bicycle.InitAppActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.boren.bicycle.activity.MainActivity" android:label="login..."/>
+        <activity android:name=".activity.LoginActivity" android:theme="@android:style/Theme.Holo.Light.NoActionBar" android:label="login..."/>
+        <activity android:name=".activity.BicycleMainActivity" android:label="bicycle main ... "/>
+    	
+        <!-- 注册相关的  Activity -->
+        <activity android:name=".activity.Register1Activity" android:label="register1..."/>
+        <activity android:name=".activity.Register2Activity" android:label="register2..."/>
+        <activity android:name=".activity.Register3Activity" android:label="register3..."/>
+        <activity android:name=".activity.Register4Activity" android:label="register4..."/>
+        <!-- 忘记密码相关的  Activity -->
+        <activity android:name=".activity.ForgotPass1Activity" android:label="ForgotPass1..."/>
+        <activity android:name=".activity.ForgotPass2Activity" android:label="ForgotPass2..."/>
+        <activity android:name=".activity.ForgotPass3Activity" android:label="ForgotPass3..."/>
+        <activity android:name=".activity.ForgotPass4Activity" android:label="ForgotPass4..."/>
+        <!-- 个人中心相关的 Activity -->
+        <activity android:name=".activity.MyCollectActivity" android:label="MyCollect"/>
+        <activity android:name=".activity.MyAddressActivity" android:label="MyAddress"/>
+        
+        
+    </application>
+    
+</manifest>
